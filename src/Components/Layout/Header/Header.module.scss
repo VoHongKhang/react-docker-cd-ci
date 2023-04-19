@@ -1,0 +1,183 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --right-search-button-width: 52px;
+    --top-search-space: 9px;
+    --search-button-height: 46px;
+    --close-button-right: 0px;
+    width: 100%;
+    height: var(--header-height, 60px);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 500;
+    background: #440597;
+}
+
+.inner {
+    height: 100%;
+    margin: 0 3%;
+    display: flex;
+    align-items: center;
+    width: var(--layout-width, 1150px);
+    justify-content: space-between;
+    // background-color: #ccc;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex: 1;
+    width: 10px;
+    // Con chuột hình ngón tay
+    &:hover {
+        cursor: pointer;
+    }
+    img {
+        border-radius: 10%;
+        width: 50px;
+    }
+}
+
+.clear {
+    position: relative;
+
+    right: var(--close-button-right);
+    color: rgba(22, 24, 35, 0.34);
+    font-size: 1.45rem;
+}
+.loading {
+    position: relative;
+    top: 50%;
+
+    right: calc(var(--close-button-right) + 15px);
+    transform: translateY(-50%);
+
+    color: rgba(22, 24, 35, 0.34);
+    font-size: 1.45rem;
+}
+
+.menu {
+    display: flex;
+    flex: 8;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    ul {
+        color: #fff;
+        font: 15px sans-serif;
+        cursor: pointer;
+        align-self: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 5;
+    height: 100%;
+
+    .search {
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .button {
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+.actions > .app {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    width: 10px;
+    // Con chuột hình ngón tay
+    &:hover {
+        cursor: pointer;
+    }
+    img {
+        border-radius: 10%;
+        width: 30px;
+    }
+}
+
+.actions > .app > .text_app {
+    color: #fff;
+    font: 15px sans-serif;
+    cursor: pointer;
+    align-self: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.actions .browser {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    width: 10px;
+    // Con chuột hình ngón tay
+    &:hover {
+        cursor: pointer;
+    }
+    .text_app {
+        color: #fff;
+        font: 15px sans-serif;
+        cursor: pointer;
+        align-self: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    img {
+        border-radius: 10%;
+        width: 30px;
+    }
+}
+
+.actions .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    width: 10px;
+    // Con chuột hình ngón tay
+    &:hover {
+        cursor: pointer;
+    }
+
+    .image_avatar {
+        img {
+            border-radius: 50%;
+            width: 25px;
+            height: 100%;
+        }
+    }
+
+    .text_app {
+        color: #fff;
+        font: 15px sans-serif;
+        cursor: pointer;
+        align-self: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+}
+
+.logout {
+    color: #fff;
+    margin: 20px;
+    font: 15px sans-serif;
+    &:hover {
+        cursor: pointer;
+    }
+}
