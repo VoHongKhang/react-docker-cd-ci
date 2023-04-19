@@ -21,7 +21,7 @@ jobs:
             firebase deploy --token $FIREBASE_TOKEN
 
 workflows:
-  version: 2
+  version: 2.1
   build-and-deploy:
     jobs:
       - build:
